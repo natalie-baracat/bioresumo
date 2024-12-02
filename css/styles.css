@@ -8,6 +8,10 @@
     font-style: normal;
 }
 
+.card-title {
+    font-weight: 600 !important;
+}
+
 main {
     display: flex;
     justify-content: center;
