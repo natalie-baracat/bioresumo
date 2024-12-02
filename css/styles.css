@@ -1,0 +1,67 @@
+main {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin: 0;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    /* align-items: center; */
+}
+
+h2{
+    color: #13223d;
+}
+
+h4{
+    color: #13223d;
+}
+
+span{
+    color: #3c4248;
+}
+
+.container-cards-section {
+    margin: 0 !important;
+    width: 100% !important; /*eu apaguei a classe container da section e coloquei essa. foi 
+    o jeito mais facil que achei que fazer todos os cards aparecerem numa linha so. sim, eu poderia so ter
+    diminuido o tamanho deles mas daria mais traalho - natalie*/
+}
+
+.altura-img {
+    height: 300px;
+}
+
+.container-img {
+   justify-content: center !important; 
+}
+
+.card-img-top {
+    width: 10vmax !important;
+    height: 10vmax !important;
+    object-fit: cover;
+}
+
+.container-img-card {
+    display: flex;
+    justify-content: center !important;
+}
+
+/* .container-img-ribo {
+    width: 20vh;
+} */
+
+.img-ribo {
+    width: 20px !important;
+    height: auto;
+}
+
+
+/* cores */
+.orchid-pink{
+    color: #f1bac8;;
+}
+

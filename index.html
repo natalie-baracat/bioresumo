@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioResumo</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- linkar Ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- icone -->
+  <link rel="shortcut icon" type="imagex/png" href="./img/icons8-biologia-16.png">
+</head>
+
+<!-- Seria legal se colocassemos o scroll reveal no nosso site, para que ele vá revelando os elementos conforme rolamos a tela -->
+
+<body>
+  </nav>
+  <nav class="navbar navbar-expand justify-content-center bg-light d-flex flex-column">
+    <div>
+      <h1 class="text-center color">BioResumo</h1>
+    </div>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link link-info active" aria-current="page" href="#dna_rna">DNA e RNA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-info" href="#Sintese_proteinas">Síntese de Proteínas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-info" href="#Ciclo_Celular">Ciclo Celular</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-info" href="#Mitose_meiose">Mitose e Meiose</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="#" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="#" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="#" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- cards, precisamos retirar a borda ou deixa-la em branco,
+        tbm precisamos definir um limite máximo para os cards seguirem
+        todos o mesmo pradão.
+        Não se deve ter restrição de tamanho da tela aqui  -->
+  <section class="d-flex flex-wrap gap-2 justify-content-evenly container-cards-section">
+    <!-- Dna e Rna -->
+    <a href="#dna_rna" class="text-decoration-none">
+      <div class="card border-light" style="width: 18rem;">
+        <div class="container-img-card">
+          <img src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2016/04/DNA-e-RNA.jpg?crop=1&resize=1212,909" class="card-img-top rounded-circle" alt="...">
+
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">DNA e RNA</h5>
+          <p class="card-text text-center">Funções, síntese, formato, bases, entre outros</p>
+        </div>
+      </div>
+    </a>
+    <!-- Sintese de proteínas -->
+    <a href="#Sintese_proteinas" class="text-decoration-none">
+      <div class="card border-light" style="width: 18rem;">
+        <div class="container-img-card">
+          <img src="https://s2-g1.glbimg.com/ydywHT2PVvp4GTE8eR5U0SlrnEo=/0x0:1700x1065/600x0/smart/filters:gifv():strip_icc()/s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/photos/apis/26f5b8ec96604e6f8980dc5d2d68ef78/crispr.jpg" class="card-img-top rounded-circle" alt="...">
+
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Síntese de Proteínas</h5>
+          <p class="card-text text-center">Processo de formação das proteínas realizado pelos ribossomos</p>
+        </div>
+      </div>
+    </a>
+    <!-- Ciclo Celular -->
+    <a href="#Ciclo_Celular" class="text-decoration-none">
+      <div class="card border-light" style="width: 18rem;">
+        <div class="container-img-card">
+          <img src="https://noticiaalternativa.com.br/wp-content/uploads/2017/01/celulas-vivas-450x300.jpg" class="card-img-top rounded-circle" alt="...">
+
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Ciclo Celular</h5>
+          <p class="card-text text-center">Interfase e Mitose</p>
+        </div>
+      </div>
+    </a>
+    <!-- Mitose e Meiose -->
+    <a href="#Mitose_meiose" class="text-decoration-none">
+      <div class="card border-light" style="width: 18rem;">
+        <div class="container-img-card">
+          <img src="https://www.educacaonamao.com.br/wp-content/uploads/2022/10/Mitose-e-Meiose-Qual-a-diferenca.jpg" class="card-img-top rounded-circle" alt="...">
+
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Mitose e Meiose</h5>
+          <p class="card-text text-center">Comparação <br> Mitose - Meiose</p>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <section class="container align-items-center w-100 mt-3 container scroll-reveal">
+    <span id="dna_rna">DNA e RNA</span>
+    <div class="d-flex flex-column w-50 p-3 gap-4">
+      <h2>DNA - Ácido Desoxirribonucleico ou ADN</h2>
+      <span>
+        O DNA é uma molécula que armazena e passa informações genéticas, 
+        essencial para o desenvolvimento dos seres vivos. É formado por uma dupla fita em hélice (em alguns vírus, entretanto,
+        o DNA é uma única fita), ligadas por pontes de hidrogênio entre bases nitrogenadas. 
+        Está ligado à hereditariedade, pois as sequências de bases formam genes que codificam proteínas ou RNA. A replicação do DNA 
+        acontece na fase S da <a href="#Ciclo_Celular" class="text-decoration-none">interfase</a>, quando a célula se prepara para dividir, sintetizando uma nova molécula idêntica à existente.
+        o que apresenta os genes de cada indivíduo e garante sua transmissão.
+      </span>
+    </div>
+    <div class="d-flex container-img w-50">
+      <img src="./img/2.png" alt="" class="altura-img">
+    </div>
+  </section>
+
+  <section class="d-flex align-items-center w-100 mt-3 container scroll-reveal">
+    <div class="d-flex container-img w-50">
+      <img src="./img/rna.png" alt="" class="altura-img">
+    </div>
+    <div class="d-flex flex-column w-50 p-3 gap-4">
+      <span>DNA e RNA</span>
+      <h2>RNA - Ácido Ribonucleico ou ARN</h2>
+      <span>
+        Diferentemente do DNA, o RNA é uma molécula de fita simples, ou fita única 
+        (em vírus o RNA pode aparecer dupla fita). Ele é formado por ribonucleotídeos, um grupo fosfato, 
+        açucar-ribose, e uma base nitrogenada, que pode ser adenina, guanina, citosina ou uracila.
+        Está relacionado com a síntese de proteínas.
+      </span>
+    </div>
+  </section>
+
+  <!-- Tipos de RNA -->
+  <!-- essa é a única parte que não deve ter a restrição de tamanho na tela,
+      quero que mantenha normal para que utilizemos o que o professor ensinou na aula passada
+      quando iniciei o site ele não havia ensinado ainda -->
+  <section class="container scroll-reveal">
+    <h2 class="text-center">Tipos de RNA</h2>
+    <div class="row mt-3 gap-5 d-flex justify-content-center">
+      <!-- Rna Mensageiro -->
+      <div class="col-12 col-md-3 bg-light border border-2 border-light rounded">
+        <h4 class="text-dark">RNA Mensageiro</h4>
+        <span>
+          O RNAm é responsável por levar a informação do DNA do núcleo até os ribossomos, 
+          para indicar quais os aminoácidos e qual a sequência que devem compor as proteínas.
+        </span>
+        <div class=""></div>
+          <img class="img-ribo" src="https://s2-epocanegocios.glbimg.com/uVQtw2iTnEN0zFBjWK-PjPCzgB8=/0x0:2121x1414/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e536e40f1baf4c1a8bf1ed12d20577fd/internal_photos/bs/2023/c/7/vmTA5dRhWdeiU06VY3sQ/gettyimages-1450368712.jpg" alt="">
+        </div>
+      <!-- Rna Ribossômico -->
+      <div class="col-12 col-md-5 bg-light border border-2 border-light rounded">
+        <h4 class="text-dark">RNA Ribossômico</h4>
+        <div><img src="#" alt=""></div>
+        <span>
+          O RNAr, ou RNA ribossômico, está ligado a formação dos ribossomos. Os RNAr se acumulam, formando nucléolos.
+          Lá, eles juntam-se as proteínas e formam os ribossomos.
+        </span>
+      </div>
+      <!-- Rna Transportador-->
+      <div class="col-12 col-md-3 bg-light border border-2 border-light rounded">
+        <h4 class="text-dark">RNA Transportador</h4>
+        <span>
+          O RNAt, ou RNA transportador, direciona os aminoácidos do interior da célula para o local da síntese 
+          de proteínas. Sendo assim, para que se seja possível ocorrer a síntese de proteínas, alguns trechos do DNA devem 
+          ser transcritos para o RNAm, que vai levar a 
+          informação para o ribossomo. O RNAt deve trazer os aminoácidos para a produção de proteínas e os
+          ribossomos deveM fabricar a cadeia polipeptídica conforme a decodificação da mensagem que foi recebida.  
+        </span>
+        <div><img src="#" alt=""></div>
+      </div>
+  </section>
+
+  <section class=" container scroll-reveal">
+    <div class="texto row mt-3 d-flex justify-content-center">
+      <!-- bases nitrogenadas -->
+      <h5>Bases Nitrogenadas</h5>
+      <p>
+        Bases nitrogenadas - Adenina, guanina e citosina aparecem tanto no DNA quanto no RNA, 
+        já a Timina apenas no DNA, assim como a Uracila Apenas no RNA. 
+      </p><br>
+
+      <!-- Acidos nucleicos -->
+      <h5>Acidos Nucleicos</h5>
+      <p>
+        Os ácidos nucleicos são formados por nucleotídeos, estruturas formadas por um radical fosfato, uma pentose e 
+        uma base nitrogenada, o radical fosfato sendo o único componente que é o mesmo em ambos. 
+      </p><br>
+    </div>
+  </section>
+
+  <section class="container scroll-reveal">
+    <!-- Ribossomos -->
+    <span id="Sintese_proteinas">Síntese de proteínas</span>
+    <section class="d-flex align-items-center w-100 mt-3">
+      <div class="d-flex flex-column w-50 p-3 gap-4">
+        <h2>Ribossomos</h2>
+        <span>
+          A síntese proteica é o processo de formação das proteínas, ele é realizado pelos ribossomos, 
+          presentes em células procarióticas e eucarióticas. Dentro da molécula do DNA, onde estão contidas
+          todas as informações do código genético, a informação para que a síntese de determinada proteína está contida, 
+          de forma que se torna necessário que esta região especifica seja decodificada. Neste processo de 
+          decodificação, ocorre a transcrição dos nucleotídeos em uma molécula de RNA, que tem a função de direcionar
+          a síntese proteica em um processo de tradução. Esta molécula, chamada RNAm, vai carregar a informação arte 
+          o local onde ocorre a síntese de proteínas. Para ocorrer a síntese é necessário, porém, que a informação presente no RNAm 
+          seja traduzida em uma sequência de aminoácidos, que darão origem a um polipeptídeo, proteína. Essa tradução fica responsável pelo RNAt, 
+          que vai traduzir cada série de códons (trincas de nucleotídeos) presentes no RNAm em um aminoácido. 
+          O RNAt, que também contêm uma trinca deste tipo em uma de suas extremidades, chamada anticódon,
+          vai transportar o aminoácido específico até os ribossomos (estruturas celulares onde ocorrem a síntese de proteínas), 
+          pareando o anticódon ao códon complementar do RNAm. (na outra extremidade do RNAt está o aminoácido correspondente). 
+          Na tradução existem dois métodos de reconhecimento. Os ribossomos constituídos por duas subunidades 
+          (a maior e menor) vão se unir na realização da síntese proteica ao RNAm e o RNAt. Neste processo o RNAm vai se descolar 
+          do ribossomo enquanto o RNAt traduz as sequencias de nucleotídeos em aminoácidos. Quando encontrado um códon de término 
+          (uma sequência que indica o fim do processo de tradução) o ribossomo deve liberar a proteína produzida e suas subunidades se separam. 
+        </span>
+        <h4 class="text-center">Revisão de Organelas</h4>
+        <div class="d-flex justify-content-center">
+          <img src="./img/QRCODE.png" alt="" width="40%">
+
+        </div>
+      </div>
+      <img src="./img/3.png" alt="" class="w-50">
+    </section>
+
+    <section class="container d-flex align-items-center w-100 mt-3 scroll-reveal">
+      <img src="#" alt="" class="w-50">
+      <div class="d-flex flex-column w-50 p-3 gap-4">
+        <span id="Ciclo_Celular">Ciclo Celular</span>
+        <h2>Interfase</h2>
+        <span>
+          A interfase é o período entre as divisões celulares. Nela, as células se preparam para iniciar
+          a mitose ou a meiose. Diferente do que se pensa, essa fase não é um "descanso", onde tudo fica parado,
+          mas sim o período de maior agitação das celulas. É durante essa preparação que ocorre a duplicação do DNA, a 
+          divisão dos centríolos e a produção de proteínas, processos apresentados acima. 
+        </span>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="texto row mt-3 gap-3 justify-content-center">
+        <!-- pode ser em h5 ou em span (acho que span ia ficar muito bonito, mas sla) -->
+        <h5 class="scroll-reveal">Fases da Interfase</h5>
+        <p>
+          A interfase é dividida entre três fases: G1, S, e G2 (G vem do do inglês <i>gap 1</i>).
+        </p><br>
+
+        <h5 class="scroll-reveal">Fase G1</h5>
+        <p>
+          As células são metabolicamente ativas. Seguem crescendo, reiniciam a produção de RNA e 
+          proteínas, que estavam pausadas durante a divisão celular anterior. Além disto, os centrossomos são duplicados.
+          Aqui também ocorre a decisão de seguirem para o processo de divisão celular ou interrompê-lo, alongando a preparação e impedindo a multiplicação de anomalias.
+          Caso interrompam o processo, a célula entra na fase <b>G0</b>
+          <!-- curiosidade -->
+        </p><br>
+
+        <h5 class="scroll-reveal">Fase S</h5>
+        <p>
+          Na fase S, a mais importante da Interfase, ocorre a <b>replicação do DNA</b>. Uma vez que se inicia, não se é possível interromper
+          o ciclo.
+        </p><br>
+
+        <h5 class="scroll-reveal">Fase G2</h5>
+        <p>
+          Intervalo entre a síntese de DNA e a divisão celular. Nessa etapa, a célula reabastece seu estoque de energia, segue crescendo, e sintetiza 
+          proteínas necessárias para a manipulação dos cromossomos. O citoesqueleto é desmontado para fornecer recursos para a divisão celular. 
+          Assim, como na G1, Aqui também ocorre a decisão de seguirem para o processo de divisão celular ou interrompê-lo.
+        </p><br>
+      </div>
+    </section>
+
+    <!-- Mitose -->
+    <!-- não deve ter a restrição  de tamanho da tela -->
+    <section class=" container align-items-center w-100 mt-3 scroll-reveal">
+      <img src="#" alt="" class="w-50">
+      <div class="d-flex flex-column w-50 p-3 gap-4">
+        <h2>Mitose</h2>
+        <span>
+          Neste processo a célula mãe deve dar origem a duas células filhas com a mesma quantidade de cromossomos (da original, ou seja, da célula mãe). 
+        </span>
+      </div>
+    </section>
+
+    <!-- Fases da mitose -->
+    <!-- Aqui devemos colocar os cards com imagens em gif sobre as estapas da mitose, podemos coloca-los com um hover -->
+    <section class="container d-flex flex-wrap gap-2">
+      <!-- Prófase  -->
+      <div class="card border-light" style="width: 18rem;">
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Prófase </h5>
+          <p class="card-text text-center">
+            Cromossomos duplicados como duas cromátides-irmãs unidas pelo centrômero. Formação do fuso mitótico, formado por microtúbulos que arte do centrossomo e garantem as movimentações dos cromossomos durante a mitose. 
+            Nesta fase temos o desaparecimento dos nucléolos. 
+          </p>
+        </div>
+      </div>
+      <!-- Prometáfase -->
+      <div class="card border-light" style="width: 18rem;">
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Prometáfase</h5>
+          <p class="card-text text-center">
+            Fragmentação da membrana nuclear e maior condensação dos cromossomos. Os microtúbulos
+            também se ligam a regiões especiais dos cromossomos denominadas cinetócoro.  
+          </p>
+        </div>
+      </div>
+      <!-- Metáfase -->
+      <div class="card border-light" style="width: 18rem;">
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Metáfase</h5>
+          <p class="card-text text-center">
+            Os centrossomos estão posicionados em polos opostos da célula,
+            e os cromossomos estão reunidos no plano equatorial. Nessa fase, não há mais
+            a presença da carioteca (envoltório nuclear), nem o nucléolo.
+          </p>
+        </div>
+      </div>
+      <!-- Anáfase -->
+      <div class="card border-light" style="width: 18rem;">
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Anáfase</h5>
+          <p class="card-text text-center">
+            As cromátides irmãs se separam e migram opara cada polo da célula devido ao encurtamento dos microtúbulos. 
+            Essa etapa, a mais curta da mitose, nos permite observar o alongamento 
+            da célula. Ao final, cada extremidade deve conter uma coleção completa de cromossomos. 
+          </p>
+        </div>
+      </div>
+      <!-- Telófase -->
+      <div class="card border-light" style="width: 18rem;">
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Telófase</h5>
+          <p class="card-text text-center">
+            Os envoltórios nucleares são reconstruídos dando origem a dois núcleos, o nucléolo reaparece novamente e os
+            cromossomos descondensam-se. Os microtúbulos também desaparecem.   
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Citocinese -->
+    <div class="d-flex justify-content-center card mb-3 border-light" style="max-width: 540px;  margin: 0 auto;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="..." class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Citocinese</h5>
+            <p class="card-text">
+              Por fim na última etapa, chamada citocinese, acontece a divisão do citoplasma, dividindo a célula em duas.  
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mitose e Meiose (tabela) -->
+    <!-- Não deve ter a restrição de tamanho da tela -->
+    <section class="container scroll-reveal">
+      <h2 class="text-center" id="Mitose_meiose">Mitose e Meiose</h2>
+    </section>
+    <footer id="footer">
+      <div class="mt-3">
+        <div class="d-flex justify-content-evenly align-items-center">
+
+          <!-- Seção de contato -->
+          <div class="scroll-reveal">
+            <h5 class="orchid-pink">Contato</h5>
+            <p>Este site foi elaborado por um grupo de estudantes da escola SESI-025,<br>
+              com o objetivo central de realizar a atividade proposta em sala para um<br>
+              projeto de biologia, ele foi elaborado a partir de conhecimentos <br>
+              adquiridos em aula e pesquisa, não apresentando ou tendo sido feito por<br>
+              profissionais da área, podendo conter erros. Por favor, nos contate se <br>
+              encontrar um ou tiver sujestões de melhorias :)
+            </p>
+          </div>
+          <!-- Seção de Redes Sociais -->
+          <div class="scroll-reveal">
+            <h5 class="orchid-pink">Grupo</h5>
+            <ul class="list-unstyled gap-3">
+              <li><i class="bi bi-backpack2"></i> Juliana n°12</li>
+              <li><i class="bi bi-backpack2"></i> Natalie n°26</li>
+              <li><i class="bi bi-backpack2"></i> Nathalia n°27</li>
+              <li><i class="bi bi-backpack2"></i> Vitória n°31</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-evenly align-items-center">
+        </div>
+        <hr class="my-3">
+        <div class="text-center">
+          <p>&copy; 2024 - Eden - Hyde . Todos os direitos reservados - Sesi/Senai</p>
+          <p>
+            <a href="" class="text-decoration-none" style="color: #f1bac8;">Política de privacidade</a>
+            <a href="" class="text-decoration-none" style="color: #f1bac8;">Termos de uso</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Configuração global
+      ScrollReveal().reveal('.scroll-reveal', {
+        distance: '50px',
+        duration: 800,
+        interval: 200
+      });
+
+      // Configuração para cards
+      ScrollReveal().reveal('.card', {
+        origin: 'bottom',
+        interval: 300
+      });
+
+      // Configuração para o carrossel
+      ScrollReveal().reveal('.carousel', {
+        origin: 'left',
+        delay: 400
+      });
+    </script>
+</body>
+
+</html>
